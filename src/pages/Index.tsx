@@ -1,10 +1,13 @@
 import { Baby, Book, Heart, Clock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import SEOMetadata from "@/components/SEOMetadata";
 
 const Index = () => {
+  const navigate = useNavigate();
+  
   const services = [
     {
       icon: Baby,
@@ -46,7 +49,7 @@ const Index = () => {
       
       <Navigation />
       
-      {/* Hero Section - Ajustado el espaciado y diseño */}
+      {/* Hero Section */}
       <section className="pt-32 bg-gradient-to-b from-primary to-primary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
@@ -60,6 +63,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-gray-900 px-8 py-6 text-lg transform hover:scale-105 transition-all duration-300"
+              onClick={() => navigate('/contacto')}
             >
               Agenda una visita gratuita
             </Button>
@@ -67,7 +71,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section - Nuevo diseño con tarjetas coloridas */}
+      {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -92,7 +96,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section - Mejorado con gradiente y diseño */}
+      {/* About Section */}
       <section className="py-20 bg-gradient-to-r from-accent to-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
@@ -108,6 +112,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               className="bg-white hover:bg-gray-50 transform hover:scale-105 transition-all duration-300"
+              onClick={() => navigate('/sobre-nosotros')}
             >
               Conoce más sobre nosotros
             </Button>

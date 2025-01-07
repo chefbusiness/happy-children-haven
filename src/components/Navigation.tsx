@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Menu, X, Baby } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navItems = [
     { name: "Inicio", href: "/" },
@@ -37,7 +39,10 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button className="bg-primary hover:bg-primary/90">
+            <Button 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => navigate('/contacto')}
+            >
               Agendar Visita
             </Button>
           </div>
@@ -67,7 +72,10 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button className="w-full mt-4 bg-primary hover:bg-primary/90">
+            <Button 
+              className="w-full mt-4 bg-primary hover:bg-primary/90"
+              onClick={() => navigate('/contacto')}
+            >
               Agendar Visita
             </Button>
           </div>
