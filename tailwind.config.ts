@@ -54,7 +54,7 @@ export default {
         },
       },
       backgroundImage: {
-        'hero-pattern': "url('/lovable-uploads/2bf2da79-82ca-4274-8c47-cb6dd7907463.png')",
+        'hero-pattern': "url('/lovable-uploads/016a5fe0-1b58-4e44-ab02-41ee31aca949.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
