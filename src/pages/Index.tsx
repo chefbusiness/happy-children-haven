@@ -50,11 +50,13 @@ const Index = () => {
       {/* Hero Section with pattern background */}
       <section className="relative pt-32">
         <div 
-          className="absolute inset-0 bg-repeat opacity-10"
+          className="absolute inset-0 z-0"
           style={{
             backgroundImage: `url(${patternBg})`,
             backgroundSize: '400px',
+            backgroundRepeat: 'repeat',
             backgroundPosition: 'center',
+            opacity: 0.1,
             filter: 'blur(2px)'
           }}
         />
