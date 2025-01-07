@@ -46,7 +46,7 @@ const Index = () => {
       
       <Navigation />
       
-      {/* Hero Section - Ajustado el espaciado y diseño */}
+      {/* Hero Section */}
       <section className="pt-32 bg-gradient-to-b from-primary to-primary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
@@ -67,7 +67,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section - Nuevo diseño con tarjetas coloridas */}
+      {/* Pattern Background Section */}
+      <div className="relative w-full h-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ 
+            backgroundImage: 'url("/pattern-bg.png")',
+            filter: 'blur(4px)'
+          }}
+        />
+      </div>
+
+      {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -92,7 +103,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section - Mejorado con gradiente y diseño */}
+      {/* About Section */}
       <section className="py-20 bg-gradient-to-r from-accent to-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
