@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Servicios from "./pages/Servicios";
 import SobreNosotros from "./pages/SobreNosotros";
 import Precios from "./pages/Precios";
+import Contacto from "./pages/Contacto";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/sobre-nosotros" element={<SobreNosotros />} />
             <Route path="/precios" element={<Precios />} />
+            <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
