@@ -10,21 +10,29 @@ const Index = () => {
       icon: Baby,
       title: "Cuidado Infantil",
       description: "Atención personalizada para cada etapa del desarrollo de tu hijo.",
+      bgColor: "bg-primary hover:bg-primary/90",
+      iconColor: "text-blue-600"
     },
     {
       icon: Book,
       title: "Educación Temprana",
       description: "Programas educativos diseñados para estimular el aprendizaje.",
+      bgColor: "bg-secondary hover:bg-secondary/90",
+      iconColor: "text-green-600"
     },
     {
       icon: Heart,
       title: "Ambiente Seguro",
       description: "Instalaciones seguras y personal altamente calificado.",
+      bgColor: "bg-accent hover:bg-accent/90",
+      iconColor: "text-yellow-600"
     },
     {
       icon: Clock,
       title: "Horarios Flexibles",
       description: "Adaptados a las necesidades de las familias modernas.",
+      bgColor: "bg-[#FDE1D3] hover:bg-[#FDE1D3]/90",
+      iconColor: "text-orange-600"
     },
   ];
 
@@ -38,8 +46,8 @@ const Index = () => {
       
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="pt-20 bg-primary">
+      {/* Hero Section - Ajustado el espaciado y diseño */}
+      <section className="pt-32 bg-gradient-to-b from-primary to-primary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -49,14 +57,17 @@ const Index = () => {
               En Guardería Mi Regazo, nos dedicamos a brindar un ambiente seguro, 
               educativo y lleno de amor para el desarrollo integral de tu pequeño.
             </p>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-gray-900">
-              Agenda una visita
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-gray-900 px-8 py-6 text-lg transform hover:scale-105 transition-all duration-300"
+            >
+              Agenda una visita gratuita
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section - Nuevo diseño con tarjetas coloridas */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -66,33 +77,40 @@ const Index = () => {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="p-6 bg-secondary rounded-lg text-center hover:shadow-lg transition-shadow"
+                className={`p-6 rounded-xl ${service.bgColor} transform hover:scale-105 transition-all duration-300 shadow-lg`}
               >
-                <service.icon className="w-12 h-12 mx-auto mb-4 text-gray-700" />
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-sm">
+                  <service.icon className={`w-8 h-8 ${service.iconColor}`} />
+                </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-700">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-accent/30">
+      {/* About Section - Mejorado con gradiente y diseño */}
+      <section className="py-20 bg-gradient-to-r from-accent to-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Sobre Mi Regazo
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-700 mb-8">
               Con años de experiencia en el cuidado infantil, nos enorgullece ser 
               parte del crecimiento y desarrollo de los niños de nuestra comunidad. 
               Nuestro equipo de profesionales está comprometido con brindar el mejor 
               cuidado y educación temprana.
             </p>
-            <Button variant="outline">Conoce más sobre nosotros</Button>
+            <Button 
+              variant="outline" 
+              className="bg-white hover:bg-gray-50 transform hover:scale-105 transition-all duration-300"
+            >
+              Conoce más sobre nosotros
+            </Button>
           </div>
         </div>
       </section>
