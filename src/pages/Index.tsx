@@ -2,6 +2,7 @@ import { Baby, Book, Heart, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import SEOMetadata from "@/components/SEOMetadata";
 
 const Index = () => {
   const services = [
@@ -29,6 +30,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOMetadata
+        title="Guardería Mi Regazo - Cuidado Infantil en Naguanagua, Carabobo"
+        description="Centro líder en cuidado infantil en Naguanagua. Ofrecemos desarrollo integral, educación temprana y un ambiente seguro para el crecimiento de tu pequeño."
+        canonicalUrl="https://guarderiamiregazo.com"
+      />
+      
       <Navigation />
       
       {/* Hero Section */}
