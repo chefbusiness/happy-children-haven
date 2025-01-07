@@ -2,6 +2,7 @@ import { Baby, Book, Heart, Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   const services = [
@@ -87,6 +88,20 @@ const Index = () => {
             </p>
             <Button variant="outline">Conoce más sobre nosotros</Button>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
+            Contáctanos
+          </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            ¿Tienes alguna pregunta? Estamos aquí para ayudarte. Completa el formulario 
+            y nos pondremos en contacto contigo lo antes posible.
+          </p>
+          <ContactForm />
         </div>
       </section>
 
