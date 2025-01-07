@@ -79,7 +79,7 @@ const SobreNosotros = () => {
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
                     <Avatar className="h-24 w-24">
-                      <AvatarImage src="/placeholder.svg" alt="Aura Núñez" />
+                      <AvatarImage src="/lovable-uploads/f680df2a-8701-422f-839e-a68dd61cde47.png" alt="Aura Núñez" />
                       <AvatarFallback>AN</AvatarFallback>
                     </Avatar>
                   </div>
@@ -97,7 +97,7 @@ const SobreNosotros = () => {
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
                     <Avatar className="h-24 w-24">
-                      <AvatarImage src="/placeholder.svg" alt="Ana Martínez" />
+                      <AvatarImage src="/lovable-uploads/969d713b-7e67-48bf-8895-f487b6cf1e3c.png" alt="Ana Martínez" />
                       <AvatarFallback>AM</AvatarFallback>
                     </Avatar>
                   </div>
@@ -115,7 +115,7 @@ const SobreNosotros = () => {
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
                     <Avatar className="h-24 w-24">
-                      <AvatarImage src="/placeholder.svg" alt="Carlos Pérez" />
+                      <AvatarImage src="/lovable-uploads/dd2568f0-a22c-4e1b-aabf-46e553543d4b.png" alt="Carlos Pérez" />
                       <AvatarFallback>CP</AvatarFallback>
                     </Avatar>
                   </div>
