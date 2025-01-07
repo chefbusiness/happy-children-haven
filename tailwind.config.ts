@@ -53,6 +53,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        'hero-pattern': "url('/lovable-uploads/2bf2da79-82ca-4274-8c47-cb6dd7907463.png')",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
