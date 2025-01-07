@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Baby } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -19,8 +19,11 @@ const Navigation = () => {
     <nav className="bg-white shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-bold text-gray-800">Mi Regazo</span>
+          <div className="flex-shrink-0 flex items-center gap-2">
+            <Baby className="h-8 w-8 text-blue-600" />
+            <span className="text-2xl font-bold text-gray-800 drop-shadow-[0_2px_2px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.1)] transition-all duration-300">
+              Mi Regazo
+            </span>
           </div>
           
           {/* Desktop menu */}
