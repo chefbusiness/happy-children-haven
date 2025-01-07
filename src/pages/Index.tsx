@@ -49,15 +49,15 @@ const Index = () => {
       {/* Hero Section with pattern background */}
       <section className="relative pt-32">
         <div 
-          className="absolute inset-0 z-0 opacity-10"
+          className="absolute inset-0 bg-repeat opacity-10"
           style={{
-            backgroundImage: 'url("/pattern-bg.png")',
-            backgroundSize: 'cover',
+            backgroundImage: `url(${new URL('/pattern-bg.png', import.meta.url).href})`,
+            backgroundSize: '400px',
             backgroundPosition: 'center',
-            filter: 'blur(3px)'
+            filter: 'blur(2px)'
           }}
         />
-        <div className="relative z-10 bg-gradient-to-b from-primary to-primary/50">
+        <div className="relative z-10 bg-gradient-to-b from-primary/90 to-primary/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
