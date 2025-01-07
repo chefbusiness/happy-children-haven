@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOMetadata from "@/components/SEOMetadata";
@@ -75,10 +76,15 @@ const SobreNosotros = () => {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card>
-                <CardContent className="p-6">
-                  <div className="aspect-square rounded-full bg-gray-200 mb-4" />
+                <CardContent className="p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <Avatar className="h-24 w-24">
+                      <AvatarImage src="/placeholder.svg" alt="Aura Núñez" />
+                      <AvatarFallback>AN</AvatarFallback>
+                    </Avatar>
+                  </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    María González
+                    Aura Núñez
                   </h3>
                   <p className="text-gray-600 mb-2">Directora Educativa</p>
                   <p className="text-sm text-gray-500">
@@ -88,8 +94,13 @@ const SobreNosotros = () => {
               </Card>
 
               <Card>
-                <CardContent className="p-6">
-                  <div className="aspect-square rounded-full bg-gray-200 mb-4" />
+                <CardContent className="p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <Avatar className="h-24 w-24">
+                      <AvatarImage src="/placeholder.svg" alt="Ana Martínez" />
+                      <AvatarFallback>AM</AvatarFallback>
+                    </Avatar>
+                  </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     Ana Martínez
                   </h3>
@@ -101,8 +112,13 @@ const SobreNosotros = () => {
               </Card>
 
               <Card>
-                <CardContent className="p-6">
-                  <div className="aspect-square rounded-full bg-gray-200 mb-4" />
+                <CardContent className="p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <Avatar className="h-24 w-24">
+                      <AvatarImage src="/placeholder.svg" alt="Carlos Pérez" />
+                      <AvatarFallback>CP</AvatarFallback>
+                    </Avatar>
+                  </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     Carlos Pérez
                   </h3>
