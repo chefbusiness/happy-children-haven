@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import SEOMetadata from "@/components/SEOMetadata";
+import patternBg from "/pattern-bg.png";
 
 const Index = () => {
   const services = [
@@ -51,7 +52,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-repeat opacity-10"
           style={{
-            backgroundImage: `url(${new URL('/pattern-bg.png', import.meta.url).href})`,
+            backgroundImage: `url(${patternBg})`,
             backgroundSize: '400px',
             backgroundPosition: 'center',
             filter: 'blur(2px)'
