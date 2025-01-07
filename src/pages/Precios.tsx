@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEOMetadata from "@/components/SEOMetadata";
@@ -102,9 +102,10 @@ const Precios = () => {
                 >
                   {plan.popular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold">
-                        Más Popular
-                      </span>
+                      <div className="bg-accent shadow-lg text-gray-800 px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 animate-pulse">
+                        <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                        <span>Más Popular</span>
+                      </div>
                     </div>
                   )}
                   <CardHeader>
