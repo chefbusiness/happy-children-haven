@@ -1,7 +1,7 @@
 import { MessageSquare } from "lucide-react";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "+584265742607"; // Número de WhatsApp de la guardería
+  const phoneNumber = "+584125742607"; // Número de WhatsApp de la guardería
   const message = encodeURIComponent("¡Hola! Me gustaría obtener más información sobre la Guardería Mi Regazo.");
 
   const handleClick = () => {

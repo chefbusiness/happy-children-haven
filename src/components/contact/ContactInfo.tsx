@@ -17,7 +17,7 @@ const ContactInfo = () => {
         <Phone className="h-5 w-5 text-primary-foreground mt-1" />
         <div>
           <h3 className="font-semibold text-lg">Teléfono</h3>
-          <p className="text-gray-600">+58 426 574 2607</p>
+          <p className="text-gray-600">+58 412 574 2607</p>
         </div>
       </div>
 
