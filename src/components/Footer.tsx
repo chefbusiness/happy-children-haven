@@ -1,15 +1,41 @@
 import { Instagram, Mail, MapPin, Phone, Coffee } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const navItems = [
+    { name: "Inicio", href: "/" },
+    { name: "Servicios", href: "/servicios" },
+    { name: "Precios", href: "/precios" },
+    { name: "Sobre Nosotros", href: "/sobre-nosotros" },
+    { name: "Galería", href: "/galeria" },
+    { name: "Contacto", href: "/contacto" },
+  ];
+
   return (
     <footer className="bg-[#F1F0FB] border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Mi Regazo</h3>
             <p className="text-gray-600 mb-4">
               Brindando cuidado y educación de calidad para el desarrollo integral de tu pequeño.
             </p>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Enlaces</h3>
+            <ul className="space-y-2">
+              {navItems.map((item) => (
+                <li key={item.name}>
+                  <Link 
+                    to={item.href}
+                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           
           <div>
