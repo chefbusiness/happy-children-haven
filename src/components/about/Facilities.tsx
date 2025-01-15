@@ -9,29 +9,29 @@ const Facilities = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         <div className="aspect-video rounded-lg overflow-hidden">
           <img 
-            src="/lovable-uploads/442d45bd-1500-46dc-bc8b-38f7f37c5c72.png" 
-            alt="Área de juegos y aprendizaje con bloques educativos de colores"
+            src="/lovable-uploads/7bc70d9d-7fbd-41c7-b4f0-b58379147407.png" 
+            alt="Niños jugando y divirtiéndose con lentes creativos"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="aspect-video rounded-lg overflow-hidden">
           <img 
-            src="/lovable-uploads/f711483c-39d6-4b4e-a21e-a6d8a42fd56b.png" 
-            alt="Salón de clases con mesas y sillas coloridas, decorado con números y letras"
+            src="/lovable-uploads/064fe58c-ba13-464d-8aef-405fec4d434d.png" 
+            alt="Grupo de niños participando en actividades educativas"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="aspect-video rounded-lg overflow-hidden">
           <img 
-            src="/lovable-uploads/02147882-7d95-446e-9b7b-0ea115262ce9.png" 
-            alt="Niño participando en actividades educativas y recreativas"
+            src="/lovable-uploads/27820403-d30f-4f9d-a926-9bee90c85ce3.png" 
+            alt="Niños disfrutando en el área verde de juegos"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="aspect-video rounded-lg overflow-hidden">
           <img 
-            src="/lovable-uploads/996e5047-24be-4d37-8130-6f06980b4664.png" 
-            alt="Salón infantil con decoración educativa y área de juegos"
+            src="/lovable-uploads/c1a6fa5b-1f26-4387-a19c-a2a24a38e7ae.png" 
+            alt="Celebración navideña con niños y personal de la guardería"
             className="w-full h-full object-cover"
           />
         </div>
