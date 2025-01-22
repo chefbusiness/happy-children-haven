@@ -31,16 +31,16 @@ const Team = () => {
           <CardContent className="p-6 text-center">
             <div className="flex justify-center mb-4">
               <Avatar className="h-24 w-24">
-                <AvatarImage src="/lovable-uploads/969d713b-7e67-48bf-8895-f487b6cf1e3c.png" alt="Ana Martínez" />
-                <AvatarFallback>AM</AvatarFallback>
+                <AvatarImage src="/lovable-uploads/969d713b-7e67-48bf-8895-f487b6cf1e3c.png" alt="Yesenia Villot" />
+                <AvatarFallback>YV</AvatarFallback>
               </Avatar>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Ana Martínez
+              Yesenia Villot
             </h3>
             <p className="text-gray-600 mb-2">Coordinadora Pedagógica</p>
             <p className="text-sm text-gray-500">
-              Especialista en desarrollo infantil y planificación de actividades educativas.
+              Especialista en planificación educativa y desarrollo de programas pedagógicos personalizados.
             </p>
           </CardContent>
         </Card>
@@ -49,16 +49,34 @@ const Team = () => {
           <CardContent className="p-6 text-center">
             <div className="flex justify-center mb-4">
               <Avatar className="h-24 w-24">
-                <AvatarImage src="/lovable-uploads/dd2568f0-a22c-4e1b-aabf-46e553543d4b.png" alt="Carlos Pérez" />
-                <AvatarFallback>CP</AvatarFallback>
+                <AvatarImage src="/lovable-uploads/dd2568f0-a22c-4e1b-aabf-46e553543d4b.png" alt="Arelis Rueda" />
+                <AvatarFallback>AR</AvatarFallback>
               </Avatar>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Carlos Pérez
+              Arelis Rueda
             </h3>
-            <p className="text-gray-600 mb-2">Psicólogo Infantil</p>
+            <p className="text-gray-600 mb-2">Psicopedagoga</p>
             <p className="text-sm text-gray-500">
-              Dedicado al acompañamiento emocional y desarrollo psicológico de nuestros niños.
+              Brinda apoyo y orientación especializada en casos específicos que requieren atención psicopedagógica.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-6 text-center">
+            <div className="flex justify-center mb-4">
+              <Avatar className="h-24 w-24">
+                <AvatarImage src="/lovable-uploads/dd2568f0-a22c-4e1b-aabf-46e553543d4b.png" alt="Dra. Nairoby Rondon" />
+                <AvatarFallback>NR</AvatarFallback>
+              </Avatar>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Dra. Nairoby Rondon
+            </h3>
+            <p className="text-gray-600 mb-2">Pediatra</p>
+            <p className="text-sm text-gray-500">
+              Realiza jornadas de evaluación pediátrica para asegurar el óptimo desarrollo y salud de nuestros niños.
             </p>
           </CardContent>
         </Card>
