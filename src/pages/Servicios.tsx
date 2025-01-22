@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Baby, Brain, Apple, Music, Globe, Heart, Clock, Star } from "lucide-react";
+import { Baby, Brain, Music, Heart, Clock, Star, Book, Pencil } from "lucide-react";
 import SEOMetadata from "@/components/SEOMetadata";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -9,7 +9,7 @@ const Servicios = () => {
     {
       icon: Baby,
       title: "Cuidado Infantil",
-      description: "Atención personalizada por grupos de edad: maternal (1-2 años), preescolar (3-5 años). Personal capacitado y ambiente seguro.",
+      description: "Atención personalizada por grupos de edad: maternal (1-2 años), preescolar (3-5 años) y primaria (6-8 años). Personal capacitado y ambiente seguro.",
       bgColor: "bg-primary hover:bg-primary/90",
       iconColor: "text-blue-600"
     },
@@ -21,9 +21,9 @@ const Servicios = () => {
       iconColor: "text-green-600"
     },
     {
-      icon: Apple,
-      title: "Alimentación y Nutrición",
-      description: "Menús balanceados y nutritivos, adaptados a las necesidades de cada edad, supervisados por nutricionistas.",
+      icon: Pencil,
+      title: "Tareas Dirigidas",
+      description: "Enseñanza individualizada para ayudar a los niños con sus actividades escolares y reforzar áreas que necesiten más atención.",
       bgColor: "bg-accent hover:bg-accent/90",
       iconColor: "text-yellow-600"
     },
@@ -33,13 +33,6 @@ const Servicios = () => {
       description: "Clases de música, arte y expresión corporal para un desarrollo integral y creativo.",
       bgColor: "bg-[#FDE1D3] hover:bg-[#FDE1D3]/90",
       iconColor: "text-orange-600"
-    },
-    {
-      icon: Globe,
-      title: "Inglés Temprano",
-      description: "Introducción al idioma inglés a través de juegos, canciones y actividades lúdicas.",
-      bgColor: "bg-[#E5DEFF] hover:bg-[#E5DEFF]/90",
-      iconColor: "text-purple-600"
     },
     {
       icon: Heart,
@@ -68,14 +61,14 @@ const Servicios = () => {
     <div className="min-h-screen flex flex-col">
       <SEOMetadata
         title="Servicios de Guardería Mi Regazo - Cuidado Infantil en Naguanagua"
-        description="Descubre nuestros servicios de cuidado infantil, estimulación temprana, alimentación balanceada y actividades especiales. Desarrollo integral para niños en Naguanagua, Carabobo."
+        description="Descubre nuestros servicios de cuidado infantil, estimulación temprana, tareas dirigidas y actividades especiales. Desarrollo integral para niños en Naguanagua, Carabobo."
         canonicalUrl="https://guarderiamiregazo.com/servicios"
       />
       
       <Navigation />
       
       <main className="flex-grow">
-        {/* Hero Section - Ajustado el espaciado */}
+        {/* Hero Section */}
         <section className="bg-gradient-to-b from-primary to-primary/50 pt-32 pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
@@ -90,7 +83,7 @@ const Servicios = () => {
           </div>
         </section>
 
-        {/* Services Grid - Nuevos colores y diseño mejorado */}
+        {/* Services Grid */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -116,7 +109,7 @@ const Servicios = () => {
           </div>
         </section>
 
-        {/* CTA Section - Mejorado para conversiones */}
+        {/* CTA Section */}
         <section className="bg-gradient-to-r from-accent to-secondary py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
