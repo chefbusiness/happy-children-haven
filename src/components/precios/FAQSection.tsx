@@ -9,8 +9,8 @@ const FAQSection = () => {
           <div>
             <h3 className="font-semibold text-lg mb-2">¿Qué incluye la matrícula?</h3>
             <p className="text-gray-600">
-              La matrícula incluye el material didáctico, seguro escolar y uniforme 
-              institucional para todo el año escolar.
+              La matrícula incluye material didáctico, cuaderno diario y caja de 
+              artículos personales para el año escolar.
             </p>
           </div>
           <div>
