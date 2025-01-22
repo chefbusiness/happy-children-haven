@@ -16,7 +16,7 @@ const Precios = () => {
   const planes = [
     {
       nombre: "Plan Básico",
-      precio: 150,
+      precio: 80,
       descripcion: "Cuidado infantil esencial",
       caracteristicas: [
         "Cuidado de lunes a viernes",
@@ -31,15 +31,14 @@ const Precios = () => {
     },
     {
       nombre: "Plan Premium",
-      precio: 250,
+      precio: 120,
       descripcion: "La experiencia completa",
       caracteristicas: [
         "Cuidado de lunes a viernes",
         "Horario extendido: 7:00 AM - 5:00 PM",
-        "Desayuno y almuerzo incluidos",
-        "Clases de inglés",
         "Actividades especiales",
         "Estimulación temprana",
+        "Tareas dirigidas",
         "Reporte semanal personalizado"
       ],
       color: "bg-accent",
@@ -48,7 +47,7 @@ const Precios = () => {
     },
     {
       nombre: "Plan Flexible",
-      precio: 200,
+      precio: 150,
       descripcion: "Adaptado a tus necesidades",
       caracteristicas: [
         "Horario personalizable",
